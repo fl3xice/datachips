@@ -1,0 +1,30 @@
+{
+  "name": "datachips",
+  "module": "src/index.ts",
+  "type": "module",
+  "author": {
+    "email": "two.fl3xice@yandex.ru",
+    "name": "Denis Gogolevsky",
+    "url": "https://flexice.ru"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/showdown": "^2.0.6"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "dev": "bun run --watch src/index.ts",
+    "build": "bun build src/index.ts --compile --outfile=dist/datachips"
+  },
+  "dependencies": {
+    "@inquirer/password": "^2.1.6",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "highlight.js": "^11.9.0",
+    "open": "^10.1.0",
+    "showdown": "^2.1.0"
+  }
+}
