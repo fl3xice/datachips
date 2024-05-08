@@ -13,7 +13,7 @@ export namespace DataChipsTemplate {
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-<style>
+    <style>
       :root {
         --background-default: #0e0e17;
         --background-container: #0a0a105b;
@@ -192,13 +192,14 @@ export namespace DataChipsTemplate {
       code {
         font-family: "Courier New", Courier, monospace;
         font-weight: 800;
-        padding: 10px;
-        border: solid 3px var(--box-shadow-container);
-        background: #ffffff0f;
+        display: contents;
       }
 
       pre {
-        margin: 35px 0;
+        padding: 10px;
+        overflow: auto;
+        border: solid 3px var(--box-shadow-container);
+        background: #ffffff0f;
       }
 
       blockquote {
@@ -211,6 +212,21 @@ export namespace DataChipsTemplate {
       @media screen and (min-width: 2373px) {
         .d-elm {
           width: 56%;
+        }
+      }
+
+      @media screen and (max-width: 550px) {
+        .container-warp {
+          animation: none;
+          padding: 0;
+          margin: 0;
+        }
+        .container {
+          margin: 0;
+          padding: 5px;
+          border: none;
+          max-height: fit-content;
+          max-width: 100%;
         }
       }
     </style>
