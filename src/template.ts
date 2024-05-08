@@ -13,7 +13,7 @@ export namespace DataChipsTemplate {
       href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <style>
+<style>
       :root {
         --background-default: #0e0e17;
         --background-container: #0a0a105b;
@@ -55,8 +55,7 @@ export namespace DataChipsTemplate {
 
       @supports not selector(::-webkit-scrollbar) {
         body {
-            scrollbar-color: var(--sb-thumb-color)
-                          var(--sb-track-color);
+          scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
         }
       }
 
@@ -76,9 +75,9 @@ export namespace DataChipsTemplate {
         transform: rotateY(0deg);
         box-shadow: var(--box-shadow-container) 0 0 150px 1px;
       }
-      
+
       .container-warp {
-        padding: 0 10rem;
+        padding: 0 5rem;
         transform: perspective(1200px) rotateY(0deg);
         transform-origin: 52% center;
         animation: warp 10s ease-in-out 0.9s infinite alternate-reverse;
@@ -193,6 +192,13 @@ export namespace DataChipsTemplate {
       code {
         font-family: "Courier New", Courier, monospace;
         font-weight: 800;
+        padding: 10px;
+        border: solid 3px var(--box-shadow-container);
+        background: #ffffff0f;
+      }
+
+      pre {
+        margin: 35px 0;
       }
 
       blockquote {
