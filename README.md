@@ -11,3 +11,7 @@ Build:
 ```bash
 bun run build
 ```
+
+# Plans
+
+- [ ] Migrate to [Marked](https://marked.js.org/)
